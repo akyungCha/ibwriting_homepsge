@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="resource/css/reset.css">
+    <link rel="stylesheet" href="resource/css/font.css">
+    <link rel="stylesheet" href="resource/css/style.css">
+</head>
+
+<body class="main">
+    <div class="header">
+        <div class="inner">
+            <div class="logo"><img src="resource/imgs/logo.png" alt="IB WRITING 로고"></div>
+            <div class="gnb">
+                <!-- pc -->
+                <ul class="gnb-list">
+                    <li><a href="">About IB Writing</a></li>
+                    <li><a href="trial.html" target="_blank">체험신청</a></li>
+                    <li><a href="">교육안내서</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+
+                <div class="search search-desktop">
+                  <input type="text" placeholder="Search in site" />
+                  <button type="button" aria-label="검색"></button>
+                </div>
+                <!-- /pc -->
+
+                <!-- mobile -->
+                <button class="icon-btn search-toggle" type="button"><img src="resource/imgs/icn_search_m.png" alt="검색 아이콘"></button>
+
+                <button class="hamburger" type="button" aria-label="메뉴 열기" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                <!-- mobile -->
+            </div>
+        </div>
+        <div class="search search-mobile">
+          <div class="field">
+            <input type="text" placeholder="Search in site">
+            <button type="button" aria-label="검색"></button>
+          </div>
+        </div>
+    </div>
+
+    <div class="drawer-overlay" hidden></div>
+    <nav class="drawer" aria-hidden="true">
+        <button class="drawer-close" type="button" aria-label="메뉴 닫기">✕</button>
+        <ul class="drawer-list">
+            <li><a href="#">About IB Writing</a></li>
+            <li><a href="#">체험신청</a></li>
+            <li><a href="#">교육안내서</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="side-menu">
+        <ul class="side-cta">
+            <li class="apply"><a href="#">체험수업<br>신청하기</a></li>
+            <li class="support"><a href="#">원격지원</a></li>
+            <li class="kakao"><a href="#">카카오톡<br>상담</a></li>
+        </ul>
+        <button class="top"><img src="resource/imgs/icn_top.png" alt="화살표">TOP</button>
+    </div>
+    <div id="fullpage">
+        <div>
+
+            <div class="section visual">
+                <div class="inner">
+                    <div class="title"><img src="resource/imgs/visual_title.png" alt="외우는 아이가 아니라 질문하는 아이가 상위 1%가 됩니다."></div>
+                    <div class="speech-bubble-wrap">
+                        <div class="speech-bubble"><img src="resource/imgs/visual_speech_bubble.png" alt="아이는 영어를 잘하는데 왜 스스로 글을 쓰지 못할까요?"></div>
+                        <div class="speech-bubble2"><img src="resource/imgs/visual_speech_bubble2.png" alt="지금의 교육이 정답을 맞히는 공부에 멈춰 있기 때문입니다."></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section one">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <div class="sub-title">유네스코가 선언한 21세기 핵심역량</div>
+                        <div class="title">미래 리터러시</div>
+                        <p>문제를 스스로 정의하고, 질문을 통해 사고를 확장하는 힘</p>
+                    </div>
+                    <div class="content">
+                        <div class="thinking-steps">
+                            <div class="step fade-up">
+                                <img src="resource/imgs/one_define.png" alt="생각하는 이미지">
+                                <div class="title">Define</div>
+                                <div class="desc">문제를 스스로 설정</div>
+                            </div>
+                            <div class="step fade-up">
+                                <img src="resource/imgs/one_interpret.png" alt="물음표 사이에 느낌표">
+                                <div class="title">Interpret</div>
+                                <div class="desc">상황을 이해하고 해석</div>
+                            </div>
+                            <div class="step fade-up">
+                                <img src="resource/imgs/one_expand.png" alt="질문하는 말풍선">
+                                <div class="title">Expand</div>
+                                <div class="desc">질문으로 사고 확장</div>
+                            </div>
+                        </div>
+                        <div class="unesco">
+                            <img src="resource/imgs/one_unesco.png" alt="유네스코 로고">
+                            <span>미래를 준비하는 아이는 지식을 외우지 않습니다.<br>생각을 질문으로 바꾸고, 글로 증명합니다</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section two">
+                <div class="title-wrap">
+                    <div class="sub-title">한국의 교실은?</div>
+                    <div class="title">여전히 ‘정답을 맞히는 공부’에 머물러...</div>
+                </div>
+                <div class="inner">
+                    <div class="graph-wrap">
+                        <div class="graph">
+                            <span class="y-label">성장</span>
+                            <span class="x-label">시간</span>
+                            <div class="orange-zone"></div>
+
+                            <div class="bars">
+                                <div class="bar teal" style="--h: 40px"></div>
+                                <div class="bar orange"></div>
+
+                                <div class="bar teal" style="--h: 80px"></div>
+                                <div class="bar orange"></div>
+
+                                <div class="bar teal" style="--h: 120px"></div>
+                                <div class="bar orange"></div>
+
+                                <div class="bar teal" style="--h: 160px"></div>
+                                <div class="bar orange"></div>
+
+                                <div class="bar teal" style="--h: 200px"></div>
+                                <div class="bar orange"></div>
+
+                                <div class="bar teal" style="--h: 240px"></div>
+                                <div class="bar orange"></div>
+
+                                <div class="bar teal" style="--h: 280px"></div>
+                                <div class="bar orange"></div>
+                            </div>
+
+                            <div class="marker teal">
+                                <div class="stem"></div>
+                                <div class="badge"><span>성적</span></div>
+                            </div>
+
+                            <div class="marker orange">
+                                <div class="dash"></div>
+                                <div class="stem"></div>
+                                <div class="badge"><span>사고</span></div>
+                            </div>
+                        </div>
+
+                        <div class="box-wrap">
+                            <div class="box score">
+                                <div class="title">성적</div>
+                                <div class="desc">문제 풀기(시험 대비 중심)</div>
+                            </div>
+
+                            <div class="box think">
+                                <div class="title">사고</div>
+                                <div class="desc">질문 하는 법(생각·해석하는 능력)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section three">
+                <div class="inner">
+                    <div class="title-wrap fade-up">
+                        <div class="sub-title">변화가 없다면</div>
+                        <div class="title">격차는 더 커집니다.</div>
+                    </div>
+                    <div class="arrow-line">
+                        <img src="resource/imgs/three_arrow.png" alt="화살표">
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle teal fade-up">
+                            <div class="title">미래가 원하는 인재</div>
+                            <div class="desc">- 문제 정의 능력<br>- 해석/추론 능력<br>- 질문 중심 사고력</div>
+                        </div>
+                        <div class="circle orange fade-up">
+                            <div class="title">현재의 교육 방향</div>
+                            <div class="desc">- 정답 중심 학습<br>- 시험 대비 반복<br>- 오답 노트</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section four">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <div class="sub-title">IB교육 물결,</div>
+                        <div class="title">변화하는 대한민국</div>
+                        <p>이미 국내 공교육에서도 IB교육이 시작되었습니다!</p>
+                    </div>
+                    <div class="map">
+                      <picture>
+                        <source srcset="resource/imgs/four_map_m.gif" media="(max-width: 1024px)">
+                        <img src="resource/imgs/four_map.gif" alt="지도">
+                      </picture>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section five">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <div class="title">영어 라이팅 왜 이렇게 어렵게 느껴질까요?</div>
+                    </div>
+                    <div class="content">
+                        <div class="txt-wrap">
+                            <p>첨삭을 받기 위한 글쓰기</p>
+                            <div class="sub-title">남는 건 생각이 아니라<br>과정일 뿐입니다.
+                                <div class="circle-reveal">
+                                    <img class="circle" src="resource/imgs/five_circle.png">
+                                </div>
+                                <div class="line-reveal">
+                                    <img class="line" src="resource/imgs/five_line.png" alt="채점 라인">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kid-wrap">
+                            <img class="kid" src="resource/imgs/five_kid.png" alt="생각하는 아이 모습">
+                            <div class="circle-wrap">
+                                <div class="circle-text">
+                                    <span>글쓰기</span>
+                                    <span>첨삭</span>
+                                    <span>수정</span>
+                                    <span>평가</span>
+                                    <span>글쓰기</span>
+                                    <span>첨삭</span>
+                                    <span>수정</span>
+                                    <span>평가</span>
+                                    <span>글쓰기</span>
+                                    <span>첨삭</span>
+                                    <span>수정</span>
+                                    <span>평가</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slogan-reveal">
+                        <img class="slogan" src="resource/imgs/five_slogan.png" alt="슬로건">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section six">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <div class="sub-title">정답을 쓰는 글쓰기에서 <span class="column">생각을 만드는 글쓰기로,</span></div>
+                        <div><img src="resource/imgs/six_logo.png" alt="IB WRITING 로고"></div>
+                    </div>
+                    <div class="video">
+                        <img src="resource/imgs/six_ex_video.png" alt="예시 동영상 이미지">
+                    </div>
+                    <div class="caption">
+                        <img src="resource/imgs/six_caption.png" alt="Learning Innovation IB WRITING">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section seven">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <div class="title">왜 IB Writing인가?</div>
+                    </div>
+
+                    <div class="step-slider">
+                        <section class="panel on" data-step="1" style="--bg:#00b7a7;">
+                            <div class="panel-inner">
+                                <div class="title">
+                                    <h3 class="step-title">1단계</h3>
+                                    <p class="step-sub">사고를 확장하는<br>Pre-writing</p>
+                                </div>
+
+                                <div class="content">
+                                    <ul class="step-list">
+                                        <li>IB Times로 <strong>이슈읽기</strong></li>
+                                        <li>원더노트로 <strong>좋은질문</strong> 만들기</li>
+                                        <li>스스로 질문을 탐구하는 <strong>AI talk</strong></li>
+                                        <li>배경지식을 점검하는 <strong>IB Quiz</strong></li>
+                                        <li>글쓰기의 시작을 돕는 <strong>Guided Writing</strong></li>
+                                    </ul>
+
+                                    <div class="panel-img">
+                                        <img src="resource/imgs/seven_step1.png" alt="사고 확장하는 이미지">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="panel orange" data-step="2">
+                            <div class="panel-inner">
+                                <div class="title">
+                                    <h3 class="step-title">2단계</h3>
+                                    <p class="step-sub">생각 기반의<br>Writing</p>
+                                </div>
+
+                                <div class="content">
+                                    <ul class="step-list">
+                                        <li><strong>Reflective writing</strong></li>
+                                        <li><strong>1차,2차 AI 자동 첨삭 </strong></li>
+                                        <li><strong>AI평가 시스템을 통한 피드백</strong></li>
+                                        <li><strong>공교육 및 글로벌 표준 제공</strong></li>
+                                        <li><strong>사고력·표현력·설득력 기반 평가</strong></li>
+                                    </ul>
+
+                                    <div class="panel-img">
+                                        <img src="resource/imgs/seven_step2.png" alt="생각하는 이미지">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="panel purple" data-step="3">
+                            <div class="panel-inner">
+                                <div class="title">
+                                    <h3 class="step-title">3단계</h3>
+                                    <p class="step-sub">세상에 보여주는<br>Pre-writing</p>
+                                </div>
+
+                                <div class="content">
+                                    <ul class="step-list">
+                                        <li><strong>주간 ‘최우수 라이팅 작품’ 시상 및 공개</strong></li>
+                                        <li><strong>UCC 영상제작으로 발표 역량 강화</strong></li>
+                                        <li><strong>발표 영상 공유 및 주도적 평가 경험</strong></li>
+                                        <li><strong>Writing & Speaking Contest 개최</strong></li>
+                                    </ul>
+
+                                    <div class="panel-img">
+                                        <img src="resource/imgs/seven_step3.png" alt="동영상 보여주는 이미지">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section eight">
+                <div class="inner">
+                    <div class="video">
+                        <img src="resource/imgs/eight_ex_video.png" alt="예시 동영상 이미지">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section nine">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <div class="title">IB Writing으로 <span class="column">경험한 변화</span></div>
+                    </div>
+
+                    <div class="review-wrap">
+                        <div class="nav-btn prev" aria-label="이전"></div>
+                        <div class="nav-btn next" aria-label="다음"></div>
+
+                        <div class="swiper review-swiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="video">
+                                        <a class="video-thumb" href="#" aria-label="영상1">
+                                            <img src="resource/imgs/nine_ex_video.png" alt="예시 동영상 이미지">
+                                        </a>
+                                    </div>
+                                    <div class="review">
+                                        <div class="avatar pink"><img src="resource/imgs/nine_women.png" alt="여자 후기"></div>
+                                        <div class="tag">후기</div>
+                                        <p class="quote">“우리 아이가 스스로<br>글을 쓰고 발표까지 해요”</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="video">
+                                        <a class="video-thumb" href="#" aria-label="영상1">
+                                            <img src="resource/imgs/nine_ex_video.png" alt="예시 동영상 이미지">
+                                        </a>
+                                    </div>
+                                    <div class="review">
+                                        <div class="avatar blue"><img src="resource/imgs/nine_man.png" alt="남자 후기"></div>
+                                        <div class="tag">후기</div>
+                                        <p class="quote">“우리 아이가 스스로<br>글을 쓰고 발표까지 해요”</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="video">
+                                        <a class="video-thumb" href="#" aria-label="영상1">
+                                            <img src="resource/imgs/nine_ex_video.png" alt="예시 동영상 이미지">
+                                        </a>
+                                    </div>
+                                    <div class="review">
+                                        <div class="avatar pink"><img src="resource/imgs/nine_women.png" alt="여자 후기"></div>
+                                        <div class="tag">후기</div>
+                                        <p class="quote">“우리 아이가 스스로<br>글을 쓰고 발표까지 해요”</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="video">
+                                        <a class="video-thumb" href="#" aria-label="영상1">
+                                            <img src="resource/imgs/nine_ex_video.png" alt="예시 동영상 이미지">
+                                        </a>
+                                    </div>
+                                    <div class="review">
+                                        <div class="avatar pink"><img src="resource/imgs/nine_women.png" alt="여자 후기"></div>
+                                        <div class="tag">후기</div>
+                                        <p class="quote">“우리 아이가 스스로<br>글을 쓰고 발표까지 해요”</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section ten">
+                <div class="inner">
+                    <div class="title-wrap">
+                        <img src="resource/imgs/ten_sub_title.png" alt="Writing is not the end of learning, but the beginning.">
+                        <div class="title">IB Writing, <span class="column">미래교육의 새로운 기준</span></div>
+                    </div>
+                    <div class="cta-wrap">
+                        <p class="fade-up">미래를 바꾸는 결정, <span class="column">바로 지금 IB Writing으로부터</span></p>
+                        <div class="btn-wrap fade-up">
+                            <button class="btn-teal" type="button">체험 수업 신청</button>
+                            <button class="btn-orange" type="button">교육 안내서 <span class="column">다운로드</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="resource/js/fullpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="resource/js/common.js"></script>
+
+    <script></script>
+
+</body>
+
+</html>
