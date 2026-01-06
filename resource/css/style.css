@@ -811,6 +811,7 @@ html, body {overflow: hidden;}
   position: absolute;
   top: clamp(-32px, -2.2vw, -24px);
   left: clamp(70px, 15vw, 160px);
+  transform: translateX(-10px);
 }
 
 .five .circle-reveal .circle{
@@ -859,6 +860,7 @@ html, body {overflow: hidden;}
     position: absolute;
     bottom: clamp(8px, 1.6vw, 14px);
     left: 0;
+    transform: translateX(-4px);
 }
 
 .five .line-reveal .line {
@@ -1320,8 +1322,8 @@ html, body {overflow: hidden;}
 
     .five .txt-wrap {padding-top: 7vw; text-align: center;}
     .five .txt-wrap p {padding-bottom: 3vw;}
-    .five .circle-reveal {left: 50%; transform: translateX(-50%); top: clamp(-14px, -4vw, -20px);}
-    .five .line-reveal {left: 11%; transform: translateX(-50%); bottom: clamp(6px, 2vw, 10px);}
+    .five .circle-reveal {left: 50%; transform: translateX(calc(-50% - 30px)); top: clamp(-14px, -4vw, -20px);}
+    .five .line-reveal {left: 11%; transform: translateX(calc(-50% - 10px)); bottom: clamp(6px, 2vw, 10px);}
     .five .content {flex-direction: column; padding: 0 50px;}
     .five .kid-wrap {width: 56%; right: auto; left: 44%; transform: translateX(-50%);}
     .five .slogan-reveal {width: 86%;}
@@ -1603,5 +1605,6 @@ html, body {overflow: hidden;}
     .apply-box .form .checks .check {width: 100%;}
     .apply-box .form .btn {height: 50px; font-size: 18px;}
 }
+
 
 
