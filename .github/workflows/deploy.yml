@@ -19,9 +19,18 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
 
-      - name: Deploy to S3
+      - name: Deploy HTML/CSS/JS to S3
         run: |
-          aws s3 sync . s3://ibwriting-homepage --delete --exclude ".git/*" --exclude ".github/*"
+          aws s3 sync . s3://ibwriting-homepage --delete \
+            --exclude ".git/*" \
+            --exclude ".github/*" \
+            --exclude "*.mp4"
+
+      - name: Upload videos to S3 (without delete)
+        run: |
+          if [ -d "resource/video" ]; then
+            aws s3 sync resource/video s3://ibwriting-homepage/resource/video --delete
+          fi
 
       - name: Invalidate CloudFront
         run: |
