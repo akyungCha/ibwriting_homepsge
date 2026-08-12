@@ -1,37 +1,26 @@
 name: Deploy to S3
-
 on:
   push:
     branches:
       - main
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
-
       - name: Deploy HTML/CSS/JS to S3
         run: |
           aws s3 sync . s3://ibwriting-homepage --delete \
             --exclude ".git/*" \
             --exclude ".github/*" \
-            --exclude "*.mp4"
-
-      - name: Upload videos to S3 (without delete)
-        run: |
-          if [ -d "resource/video" ]; then
-            aws s3 sync resource/video s3://ibwriting-homepage/resource/video --delete
-          fi
-
+            --exclude "resource/video/*"
       - name: Invalidate CloudFront
         run: |
           aws cloudfront create-invalidation --distribution-id E8NRA53TNVJKX --paths "/*"
