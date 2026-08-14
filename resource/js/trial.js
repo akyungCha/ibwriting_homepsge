@@ -54,7 +54,7 @@
     })
       .then(function (res) {
         if (!res.ok) throw new Error('HTTP ' + res.status);
-        alert('신청이 접수되었습니다.\n확인 후 순차적으로 연락드리겠습니다.');
+        alert('체험 수업 신청이 접수되었습니다.\n확인 후 순차적으로 연락드리겠습니다.');
         reset();
       })
       .catch(function (err) {
