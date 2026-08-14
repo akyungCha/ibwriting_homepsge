@@ -64,6 +64,22 @@ $(document).ready(function () {
         });
     });
 
+    // 동영상 음소거 토글
+    $('.six .video, .eight .video').each(function () {
+        const $wrap = $(this);
+        const video = $wrap.find('video')[0];
+        const $icon = $wrap.find('.mute-icon');
+        $wrap.on('click', function () {
+            video.muted = !video.muted;
+            $icon.text(video.muted ? '🔇' : '🔊');
+        });
+    });
+
+    // TOP 버튼
+    $('.top').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 400);
+    });
+
     //section_nine 슬라이드
     const reviewSwiper = new Swiper('.review-swiper', {
         slidesPerView: 1,
