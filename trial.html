@@ -2,119 +2,212 @@
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가맹상담신청 | IB라이팅</title>
+  <meta name="robots" content="noindex, follow">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
-    <link rel="stylesheet" href="resource/css/reset.css">
-    <link rel="stylesheet" href="resource/css/font.css">
-    <link rel="stylesheet" href="resource/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <link rel="stylesheet" href="resource/css/reset.css">
+  <link rel="stylesheet" href="resource/css/fonts.css">
+  <link rel="stylesheet" href="resource/css/style.css">
 </head>
 
 <body style="overflow: auto;">
-    <div class="header">
-        <div class="inner">
-            <div class="logo"><img src="resource/imgs/logo.png" alt="IB WRITING 로고"></div>
-            <div class="gnb">
-                <!-- pc -->
-                <ul class="gnb-list">
-                    <li><a href="index.html">About IB Writing</a></li>
-                    <li><a href="">체험신청</a></li>
-                    <li><a href="">교육안내서</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
+  <div class="header">
+    <div class="inner">
+      <div class="logo"><a href="index.html"><img src="resource/imgs/logo.png" alt="IB WRITING 로고"></a></div>
+      <div class="gnb">
+        <!-- pc -->
+        <ul class="gnb-list">
+          <li><a href="index.html">About IB Writing</a></li>
+          <li><a href="trial.html">체험신청</a></li>
+          <!-- PDF파일 CDN -->
+          <li><a href="#">교육안내서</a></li>
+          <!-- PDF파일 CDN -->
+          <li><a href="http://pf.kakao.com/_xaUPxen/chat">Contact</a></li>
+        </ul>
 
-                <div class="search search-desktop">
-                  <input type="text" placeholder="Search in site" />
-                  <button type="button" aria-label="검색"></button>
-                </div>
-                <!-- /pc -->
-
-                <!-- mobile -->
-                <button class="icon-btn search-toggle" type="button"><img src="resource/imgs/icn_search_m.png" alt="검색 아이콘"></button>
-
-                <button class="hamburger" type="button" aria-label="메뉴 열기" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
-                <!-- mobile -->
-            </div>
+        <div class="search search-desktop">
+          <input type="text" placeholder="Search in site" />
+          <button type="button" aria-label="검색"></button>
         </div>
-        <div class="search search-mobile">
-          <div class="field">
-            <input type="text" placeholder="Search in site">
-            <button type="button" aria-label="검색"></button>
+        <!-- /pc -->
+
+        <!-- mobile -->
+        <button class="icon-btn search-toggle" type="button"><img src="resource/imgs/icn_search_m.png"
+            alt="검색 아이콘"></button>
+
+        <button class="hamburger" type="button" aria-label="메뉴 열기" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <!-- mobile -->
+      </div>
+    </div>
+    <div class="search search-mobile">
+      <div class="field">
+        <input type="text" placeholder="Search in site">
+        <button type="button" aria-label="검색"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawer-overlay" hidden></div>
+  <nav class="drawer" aria-hidden="true">
+    <button class="drawer-close" type="button" aria-label="메뉴 닫기">✕</button>
+    <ul class="drawer-list">
+      <li><a href="index.html">About IB Writing</a></li>
+      <li><a href="trial.html">체험신청</a></li>
+      <li><a href="#">교육안내서</a></li>
+      <li><a href="http://pf.kakao.com/_xaUPxen/chat">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="sub-bg">
+    <div class="apply-box">
+      <div class="title-wrap">
+        <div class="title">체험 수업 신청</div>
+        <p>체험 수업을 신청하면 1일(12시간) 이용권이 발송됩니다.</p>
+      </div>
+
+      <div class="form">
+
+        <div class="name-wrap">
+          <label for="name">이름</label>
+          <input class="name" id="name" name="name" type="text">
+        </div>
+
+        <div>
+          <label for="org">기관(학원/학교명)</label>
+          <input id="org" name="org" type="text" placeholder="없을 시 미입력">
+        </div>
+
+        <div>
+          <label for="phone">연락처</label>
+          <input id="phone" name="phone" type="tel">
+        </div>
+
+        <div>
+          <label for="ref">추천인(기관)</label>
+          <input id="ref" name="ref" type="text" placeholder="없을 시 미입력">
+        </div>
+
+        <div>
+          <label for="memo">문의사항</label>
+          <textarea id="memo" name="memo" placeholder="없을 시 미입력"></textarea>
+        </div>
+
+        <div class="source">
+          <span class="source-title">유입경로</span>
+          <div class="checks" role="group" aria-label="유입경로 선택">
+            <label class="check"><input type="radio" name="source" value="cafe"><span class="d-radio"></span> 카페(네이버,
+              학관노 등)</label>
+            <label class="check"><input type="radio" name="source" value="search"><span class="d-radio"></span>
+              검색</label>
+            <label class="check"><input type="radio" name="source" value="intro"><span class="d-radio"></span>
+              소개</label>
+            <label class="check"><input type="radio" name="source" value="etc"><span class="d-radio"></span> 기타(인스타그램,
+              지역광고 등)</label>
           </div>
         </div>
-    </div>
 
-    <div class="drawer-overlay" hidden></div>
-    <nav class="drawer" aria-hidden="true">
-        <button class="drawer-close" type="button" aria-label="메뉴 닫기">✕</button>
-        <ul class="drawer-list">
-            <li><a href="#">About IB Writing</a></li>
-            <li><a href="#">체험신청</a></li>
-            <li><a href="#">교육안내서</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="sub-bg">
-        <div class="apply-box">
-            <div class="title-wrap">
-                <div class="title">체험 수업 신청</div>
-                <p>체험 수업을 신청하면 1일(12시간) 이용권이 발송됩니다.</p>
-            </div>
-
-            <div class="form">
-
-                <div class="name-wrap">
-                    <label for="name">이름</label>
-                    <input class="name" name="name" type="text">
-                </div>
-
-                <div>
-                    <label for="org">기관(학원/학교명)</label>
-                    <input id="org" name="org" type="text" placeholder="없을 시 미입력">
-                </div>
-
-                <div>
-                    <label for="phone">연락처</label>
-                    <input name="phone" type="tel">
-                </div>
-
-                <div>
-                    <label for="ref">추천인(기관)</label>
-                    <input id="ref" name="ref" type="text" placeholder="없을 시 미입력">
-                </div>
-
-                <div>
-                    <label for="memo">문의사항</label>
-                    <textarea id="memo" name="memo" placeholder="없을 시 미입력"></textarea>
-                </div>
-
-                <div class="source">
-                    <span class="source-title">유입경로</span>
-                    <div class="checks" role="group" aria-label="유입경로 선택">
-                        <label class="check"><input type="radio" name="source" value="cafe"><span class="d-radio"></span> 카페(네이버, 학관노 등)</label>
-                        <label class="check"><input type="radio" name="source" value="search"><span class="d-radio"></span> 검색</label>
-                        <label class="check"><input type="radio" name="source" value="intro"><span class="d-radio"></span> 소개</label>
-                        <label class="check"><input type="radio" name="source" value="etc"><span class="d-radio"></span> 기타(인스타그램, 지역광고 등)</label>
-                    </div>
-                </div>
-
-                <button class="btn" type="submit">체험 수업 신청 하기</button>
-
-            </div>
+        <div class="agree">
+          <label class="agree-check" for="agreePrivacy">
+            <input type="checkbox" id="agreePrivacy"><span class="d-check"></span>
+            <span class="agree-text">[필수] 개인정보 수집·이용에 동의합니다.</span>
+          </label>
+          <a class="agree-more" href="privacy.html"
+            onclick="window.open(this.href, 'privacyPopup', 'width=960,height=900,scrollbars=yes,resizable=yes'); return false;">자세히
+            보기</a>
+          <ul class="agree-note">
+            <li>수집항목 : 이름, 연락처, 기관명, 추천인, 문의사항</li>
+            <li>수집목적 : 체험 수업 신청 접수 및 상담</li>
+            <li>보유기간 : 문의 처리 완료 후 1년</li>
+            <li>동의를 거부하실 수 있으나, 거부 시 체험 수업 신청이 제한됩니다.</li>
+          </ul>
         </div>
+
+        <button class="btn" type="submit">체험 수업 신청 하기</button>
+
+      </div>
     </div>
+  </div>
+
+  <!-- 푸터 ─────────────────────────────────────── -->
+  <div class="st-footer-wrap" id="section-footer">
+    <footer class="st-footer">
+      <div class="st-footer-inner">
+
+        <!-- 왼쪽: 로고 -->
+        <div class="st-footer-left">
+          <img src="resource/imgs/logo.png" alt="IB WRITING 로고" />
+        </div>
+
+        <!-- 오른쪽: 링크 + 회사정보 -->
+        <div class="st-footer-right">
+          <div class="st-footer-top">
+            <nav class="st-policy">
+              <a href="terms.html"
+                onclick="window.open(this.href, 'termsPopup', 'width=960,height=900,scrollbars=yes,resizable=yes'); return false;">이용약관</a>
+              <a href="privacy.html"
+                onclick="window.open(this.href, 'privacyPopup', 'width=960,height=900,scrollbars=yes,resizable=yes'); return false;"><b>개인정보처리방침</b></a>
+            </nav>
+            <div class="st-link-wrap">
+              <div class="st-link">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="https://www.segimedu.com/about" target="_blank" rel="noopener">새김교육(주)</a></li>
+                  <li><a href="https://www.segimedu.com/message" target="_blank" rel="noopener">CEO 메시지</a></li>
+                  <li><a href="https://www.segimedu.com/about#history" target="_blank" rel="noopener">History</a></li>
+                </ul>
+              </div>
+              <div class="st-link">
+                <h4>가맹문의</h4>
+                <ul>
+                  <li><a href="trial.html">가맹상담신청</a></li>
+                  <li><a href="https://www.segimedu.com/partnership" target="_blank" rel="noopener">설명회 캘린더</a></li>
+                  <li><a href="https://www.segimedu.com/partnership" target="_blank" rel="noopener">협력업체 제안</a></li>
+                </ul>
+              </div>
+              <div class="st-link">
+                <h4>리쿠르트</h4>
+                <ul>
+                  <li><a href="https://www.segimedu.com/career" target="_blank" rel="noopener">인재상 / 채용</a></li>
+                  <li><a href="https://www.segimedu.com/career3" target="_blank" rel="noopener">채용정보확인</a></li>
+                  <li><a href="https://www.segimedu.com/career2" target="_blank" rel="noopener">복리후생</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 회사 상세정보 -->
+          <div class="st-footer-bottom">
+            <p>
+              <span>새김교육(주)</span>
+              <span>대표 : 한선덕</span>
+            </p>
+            <p>
+              <span>사업자등록번호 : 809-81-00876</span>
+              <span>통신판매업신고 : 2024-화성동탄-4842호</span>
+              <span>대표번호 : 1800-7501</span>
+            </p>
+            <p>
+              <span>주소 : 경기 화성시 동탄순환대로 823 에이팩시티 1105호</span>
+              <span>E-mail : segimedu@naver.com</span>
+              <span>개인정보관리책임자 : 차아경</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="resource/js/common.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="resource/js/common.js"></script>
 
-    <script></script>
+  <script src="resource/js/trial.js"></script>
 </body>
 
 </html>
-
