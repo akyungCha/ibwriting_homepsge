@@ -976,6 +976,9 @@ html, body {overflow: hidden;}
 .six {
     width: 100%;
     background-color: #00b49f;
+    /* 영상 프레임 폭: 가로(80vw/700px)뿐 아니라 남은 세로 공간에도 맞춤.
+       370px = 상단 padding + title-wrap + video margin + caption 대략치 */
+    --video-w: clamp(280px, min(80vw, (100vh - 370px) * 16 / 9), 700px);
 }
 
 .six .title-wrap {padding-top: 5.7292vw;}
@@ -983,15 +986,16 @@ html, body {overflow: hidden;}
 .six .title-wrap img {width: 360px;}
 
 .six .video {
-    margin: clamp(60px, 6vw, 60px) auto 0;
-    width: clamp(280px, 80vw, 700px);
+    margin: clamp(20px, 4vh, 60px) auto 0;
+    width: var(--video-w);
+    aspect-ratio: 16 / 9;
     border: 10px solid #c9fcf6;
 }
 .six .video img {width: 100%;}
 
 .six .caption {
     margin: 0 auto;
-    width: clamp(280px, 80vw, 700px);
+    width: var(--video-w);
     padding-top: clamp(12px, 2vw, 20px);
     text-align: right;
 }
@@ -1125,7 +1129,8 @@ html, body {overflow: hidden;}
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: clamp(280px, 86vw, 800px);
+    width: clamp(280px, min(86vw, (100vh - 120px) * 16 / 9), 800px);
+    aspect-ratio: 16 / 9;
     border: clamp(6px, 1vw, 10px) solid #c2c2c2;
 }
 .eight .video img {width: 100%}
