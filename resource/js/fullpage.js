@@ -8,6 +8,14 @@
     function setActiveSection(i) {
         sections.forEach((sec, idx) => {
             sec.classList.toggle('on', idx === i);
+
+            // 영상은 해당 섹션(+바로 다음 섹션)에 왔을 때만 로드.
+            // 페이지 열자마자 전부 받으면 서로 대역폭을 뺏어 첫 프레임이 늦게 뜬다.
+            const video = sec.querySelector('video[data-src]');
+            if (!video) return;
+            if (!video.src && (idx === i || idx === i + 1)) video.src = video.dataset.src;
+            if (idx === i) video.play().catch(() => {});
+            else video.pause();
         });
     }
 
